@@ -16,6 +16,9 @@
 		7042B2C423C01CD50074D68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7042B2C223C01CD50074D68B /* LaunchScreen.storyboard */; };
 		7042B2CF23C01CD50074D68B /* SpaxeCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042B2CE23C01CD50074D68B /* SpaxeCTests.swift */; };
 		7042B2DA23C01CD50074D68B /* SpaxeCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042B2D923C01CD50074D68B /* SpaxeCUITests.swift */; };
+		7042B2EB23C01F9C0074D68B /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042B2EA23C01F9C0074D68B /* SpaceXAPI.swift */; };
+		7042B2ED23C030C70074D68B /* SpaceXLaunchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042B2EC23C030C70074D68B /* SpaceXLaunchInfo.swift */; };
+		7042B2EF23C05A250074D68B /* SpaceXAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042B2EE23C05A250074D68B /* SpaceXAPIDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7042B2D523C01CD50074D68B /* SpaxeCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaxeCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042B2D923C01CD50074D68B /* SpaxeCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaxeCUITests.swift; sourceTree = "<group>"; };
 		7042B2DB23C01CD50074D68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7042B2EA23C01F9C0074D68B /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
+		7042B2EC23C030C70074D68B /* SpaceXLaunchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchInfo.swift; sourceTree = "<group>"; };
+		7042B2EE23C05A250074D68B /* SpaceXAPIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,9 @@
 		7042B2B423C01CD30074D68B /* SpaxeC */ = {
 			isa = PBXGroup;
 			children = (
-				7042B2B523C01CD30074D68B /* AppDelegate.swift */,
-				7042B2B723C01CD30074D68B /* SceneDelegate.swift */,
-				7042B2B923C01CD30074D68B /* MasterViewController.swift */,
-				7042B2BB23C01CD30074D68B /* DetailViewController.swift */,
+				7042B2E923C01D370074D68B /* Classes */,
+				7042B2E823C01D1E0074D68B /* Delegates */,
+				7042B2E723C01CFC0074D68B /* ViewControllers */,
 				7042B2BD23C01CD30074D68B /* Main.storyboard */,
 				7042B2C023C01CD50074D68B /* Assets.xcassets */,
 				7042B2C223C01CD50074D68B /* LaunchScreen.storyboard */,
@@ -129,6 +134,34 @@
 				7042B2DB23C01CD50074D68B /* Info.plist */,
 			);
 			path = SpaxeCUITests;
+			sourceTree = "<group>";
+		};
+		7042B2E723C01CFC0074D68B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7042B2B923C01CD30074D68B /* MasterViewController.swift */,
+				7042B2BB23C01CD30074D68B /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7042B2E823C01D1E0074D68B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7042B2B523C01CD30074D68B /* AppDelegate.swift */,
+				7042B2B723C01CD30074D68B /* SceneDelegate.swift */,
+				7042B2EE23C05A250074D68B /* SpaceXAPIDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7042B2E923C01D370074D68B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7042B2EA23C01F9C0074D68B /* SpaceXAPI.swift */,
+				7042B2EC23C030C70074D68B /* SpaceXLaunchInfo.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7042B2ED23C030C70074D68B /* SpaceXLaunchInfo.swift in Sources */,
 				7042B2B623C01CD30074D68B /* AppDelegate.swift in Sources */,
 				7042B2B823C01CD30074D68B /* SceneDelegate.swift in Sources */,
+				7042B2EF23C05A250074D68B /* SpaceXAPIDelegate.swift in Sources */,
 				7042B2BA23C01CD30074D68B /* MasterViewController.swift in Sources */,
 				7042B2BC23C01CD30074D68B /* DetailViewController.swift in Sources */,
+				7042B2EB23C01F9C0074D68B /* SpaceXAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
